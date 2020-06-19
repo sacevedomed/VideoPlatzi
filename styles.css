@@ -41,6 +41,7 @@ body {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
+      text-align: center;
   }
 
   .login__container--form {
@@ -148,4 +149,22 @@ body {
 
   .footer a:hover {
       text-decoration: underline;
+  }
+
+  @media only screen and (max-width:600px) {
+    .header__img {
+          margin: auto;
+    }  
+    
+    .login__container {
+          background-color: transparent;
+          border: none;
+          padding: 0px;
+          width: 100%;
+      }
+
+    .footer {
+          align-items: flex-start;
+          flex-direction: column;
+    }
   }
